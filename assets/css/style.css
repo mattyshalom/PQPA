@@ -20,6 +20,11 @@
     --font-family-inter-light: "Inter-Light", sans-serif;
 }
 
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
 /*classes*/
 .inter-normal-black-15px {
     color: var(--black);
@@ -540,3 +545,759 @@
     to {opacity: 1}
 }
 
+.desktop {
+    align-items: center;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    height: 1024px;
+    overflow: hidden;
+    width: 1440px;
+  }
+  
+  .desktop .div {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .desktop .text-wrapper {
+    position: absolute;
+    top: 35px;
+    left: 345px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .below-are {
+    position: absolute;
+    width: 835px;
+    top: 89px;
+    left: 302px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .overlap {
+    position: absolute;
+    width: 304px;
+    height: 251px;
+    top: 221px;
+    left: -93px;
+  }
+  
+  .desktop .rectangle {
+    position: absolute;
+    width: 304px;
+    height: 230px;
+    top: 0;
+    left: 0;
+    background-color: #eeeded;
+    border-radius: 10px;
+  }
+  
+  .desktop .p {
+    position: absolute;
+    width: 280px;
+    top: 35px;
+    left: 11px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .overlap-group {
+    position: absolute;
+    width: 986px;
+    height: 803px;
+    top: 221px;
+    left: 236px;
+  }
+  
+  .desktop .overlap-group-2 {
+    position: absolute;
+    width: 986px;
+    height: 803px;
+    top: 0;
+    left: 0;
+  }
+  
+  .desktop .rectangle-2 {
+    left: 8px;
+    background-color: #ff7a00;
+    position: absolute;
+    width: 304px;
+    height: 230px;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  .desktop .text-wrapper-2 {
+    width: 280px;
+    top: 35px;
+    left: 20px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .text-wrapper-3 {
+    position: absolute;
+    top: 201px;
+    left: 23px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .rectangle-3 {
+    left: 682px;
+    background-color: #eeeded;
+    position: absolute;
+    width: 304px;
+    height: 230px;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  .desktop .text-wrapper-4 {
+    top: 198px;
+    left: 696px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff7a00;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .text-wrapper-5 {
+    width: 280px;
+    top: 33px;
+    left: 696px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .text-wrapper-6 {
+    position: absolute;
+    top: 8px;
+    left: 21px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .text-wrapper-7 {
+    top: 4px;
+    left: 696px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .pexels-ketut {
+    position: absolute;
+    width: 968px;
+    height: 557px;
+    top: 246px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .desktop .overlap-2 {
+    position: absolute;
+    width: 304px;
+    height: 242px;
+    top: 0;
+    left: 345px;
+  }
+  
+  .desktop .text-wrapper-8 {
+    top: 203px;
+    left: 13px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff7a00;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .the-online-demo-exam {
+    width: 291px;
+    top: 26px;
+    left: 13px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .text-wrapper-9 {
+    top: 3px;
+    left: 13px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .overlap-3 {
+    position: absolute;
+    width: 304px;
+    height: 245px;
+    top: 221px;
+    left: 1255px;
+  }
+  
+  .desktop .text-wrapper-10 {
+    top: 193px;
+    left: 15px;
+    position: absolute;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff7a00;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .desktop .text-wrapper-11 {
+    width: 280px;
+    top: 29px;
+    left: 15px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .text-wrapper-12 {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .schools {
+    background-color: #ff7a00;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .schools .div {
+    background-color: #ff7a00;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .schools .parag_1 {
+    position: absolute;
+    top: 39px;
+    left: 380px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .schools .parag_2 {
+    position: absolute;
+    top: 688px;
+    left: 50px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .schools .parag_3 {
+    position: absolute;
+    width: 835px;
+    top: 95px;
+    left: 303px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .school1_container {
+    position: absolute;
+    width: 333px;
+    height: 392px;
+    top: 216px;
+    left: 50px;
+  }
+  
+  .schools .container {
+    position: absolute;
+    width: 332px;
+    height: 392px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .schools .img {
+    position: absolute;
+    width: 333px;
+    height: 209px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .schools .parag_4 {
+    position: absolute;
+    width: 320px;
+    top: 243px;
+    left: 9px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .achievers {
+    position: absolute;
+    top: 218px;
+    left: 9px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .schools .school2_container {
+    position: absolute;
+    width: 333px;
+    height: 392px;
+    top: 216px;
+    left: 536px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .schools .our-school-leveraged {
+    position: absolute;
+    width: 320px;
+    top: 243px;
+    left: 12px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .blessed {
+    position: absolute;
+    top: 218px;
+    left: 12px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .schools .school3_container {
+    position: absolute;
+    width: 333px;
+    height: 392px;
+    top: 216px;
+    left: 1026px;
+  }
+  
+  .schools .healthy_brain {
+    position: absolute;
+    top: 218px;
+    left: 10px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .schools .what-we-do {
+    position: absolute;
+    width: 375px;
+    top: 692px;
+    left: 498px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .parag_5 {
+    position: absolute;
+    width: 375px;
+    top: 723px;
+    left: 1033px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .p-exam {
+    position: absolute;
+    width: 375px;
+    top: 733px;
+    left: 50px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .parag_6 {
+    position: absolute;
+    width: 375px;
+    top: 692px;
+    left: 1033px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .text-wrapper-11 {
+    position: absolute;
+    width: 375px;
+    top: 781px;
+    left: 1033px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .text-wrapper-12 {
+    position: absolute;
+    width: 375px;
+    top: 821px;
+    left: 1033px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .text-wrapper-13 {
+    position: absolute;
+    width: 375px;
+    top: 858px;
+    left: 1033px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .text-wrapper-14 {
+    position: absolute;
+    width: 375px;
+    top: 897px;
+    left: 1033px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .phone {
+    position: absolute;
+    width: 156px;
+    top: 762px;
+    left: 70px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .text-email {
+    position: absolute;
+    width: 156px;
+    top: 790px;
+    left: 78px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .fluent-checkmark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 748px;
+    left: 498px;
+  }
+  
+  .schools .fluent-checkmark-2 {
+    top: 784px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 498px;
+  }
+  
+  .schools .fluent-checkmark-3 {
+    top: 820px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 498px;
+  }
+  
+  .schools .waec_qs {
+    position: absolute;
+    width: 169px;
+    top: 747px;
+    left: 524px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .neco_qs {
+    position: absolute;
+    width: 168px;
+    top: 783px;
+    left: 524px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .gce_qs {
+    position: absolute;
+    width: 152px;
+    top: 819px;
+    left: 524px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .schools .vector {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 793px;
+    left: 50px;
+  }
+  
+  .schools .vector-2 {
+    position: absolute;
+    width: 15px;
+    height: 19px;
+    top: 762px;
+    left: 50px;
+  }
+  
+  .schools .subtract {
+    position: absolute;
+    width: 290px;
+    height: 214px;
+    top: 0;
+    left: 1150px;
+  }
+  
+  .schools .line {
+    top: 808px;
+    position: absolute;
+    width: 354px;
+    height: 2px;
+    left: 1033px;
+    object-fit: cover;
+  }
+  
+  .schools .line-2 {
+    top: 851px;
+    position: absolute;
+    width: 354px;
+    height: 2px;
+    left: 1033px;
+    object-fit: cover;
+  }
+  
+  .schools .line-3 {
+    top: 887px;
+    position: absolute;
+    width: 354px;
+    height: 2px;
+    left: 1033px;
+    object-fit: cover;
+  }
+  
+  .schools .line-4 {
+    top: 931px;
+    position: absolute;
+    width: 354px;
+    height: 2px;
+    left: 1033px;
+    object-fit: cover;
+  }
+  
+  .schools .div-wrapper {
+    position: absolute;
+    width: 94px;
+    height: 31px;
+    top: 952px;
+    left: 1033px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+ 
+.php-email-form input,
+.php-email-form textarea {
+  padding: 3px 5px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.php-email-form button {
+  position: absolute;
+  top: 3px;
+  left: 13px;
+  bottom: 3px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ff7a00;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  background-color: #000000;
+  border: 0;
+  cursor: pointer;
+}
