@@ -414,7 +414,7 @@ section {
     height: 33px;
     flex-shrink: 0;
     border: 1px solid var(--heat-wave);
-    background-color: #fff;
+    background-color: var(--alto);
     margin-left: 4px;
     align-items: center;
     padding-left: 20px;
