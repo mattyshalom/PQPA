@@ -240,61 +240,12 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.topbar {
-  background: #00796b;
-  height: 40px;
-  font-size: 14px;
-  transition: all 0.5s;
-  color: #fff;
-  padding: 0;
-}
-
-.topbar .contact-info i {
-  font-style: normal;
-  color: #fff;
-  line-height: 0;
-}
-
-.topbar .contact-info i a,
-.topbar .contact-info i span {
-  padding-left: 5px;
-  color: #fff;
-}
-
-@media (max-width: 575px) {
-
-  .topbar .contact-info i a,
-  .topbar .contact-info i span {
-    font-size: 13px;
-  }
-}
-
-.topbar .contact-info i a {
-  line-height: 0;
-  transition: 0.3s;
-}
-
-.topbar .contact-info i a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.topbar .social-links a {
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 0;
-  transition: 0.3s;
-  margin-left: 20px;
-}
-
-.topbar .social-links a:hover {
-  color: #fff;
-}
 
 .header {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  background-color: var(--alto);
 }
 
 .header.sticked {
@@ -321,7 +272,7 @@ section {
 }========*/
 
 .header .logo h1 span {
-  color: #f96f59;
+  color: var(--heat-wave);
 }
 
 .sticked-header-offset {
@@ -407,7 +358,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--black);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -427,7 +378,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: var(--heat-wave);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -445,6 +396,56 @@ section {
   .navbar .active:focus,
   .navbar li:hover>a {
     color: #fff;
+  }
+
+  .navbar .dropdown{
+    display: flex;
+  } 
+
+  .navbar .dropdown .flag {
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  .navbar .signup {
+    width: 96px;
+    height: 33px;
+    flex-shrink: 0;
+    border: 1px solid var(--heat-wave);
+    background-color: #fff;
+    margin-left: 4px;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .navbar .signup a {
+    width: 56px;
+    height: 18px;
+    top: 0px;
+    font-family: var(--font-family-inter);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.15px;
+    padding-right: 20px;
+  }
+
+  .navbar .signin {
+    width: 96px;
+    height: 33px;
+    background-color: var(--heat-wave);
+    padding-left: 20px;
+    margin-left: 20px;
+  } 
+
+  .navbar .signin a {
+    width: 49px;
+    height: 18px;
+    font-family: var(--font-family-inter);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.15px;
   }
 
   .navbar .dropdown ul {
@@ -472,7 +473,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
-    color: #006a5d;
+    color: var(--black);
   }
 
   .navbar .dropdown ul a i {
@@ -543,7 +544,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: var(--heat-wave);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -1817,80 +1818,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Frequently Asked Questions Section
---------------------------------------------------------------*/
-.faq .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-}
-
-.faq .content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.faq .content p {
-  font-size: 15px;
-  color: #6c757d;
-}
-
-.faq .accordion-item {
-  border: 0;
-  margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-}
-
-.faq .accordion-item:last-child {
-  margin-bottom: 0;
-}
-
-.faq .accordion-collapse {
-  border: 0;
-}
-
-.faq .accordion-button {
-  padding: 20px 50px 20px 20px;
-  font-weight: 600;
-  border: 0;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--color-default);
-  text-align: left;
-  background: #fff;
-  box-shadow: none;
-  border-radius: 10px;
-}
-
-.faq .accordion-button .num {
-  padding-right: 10px;
-  font-size: 20px;
-  line-height: 0;
-  color: var(--color-primary);
-}
-
-.faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
-  border-bottom: 0;
-  box-shadow: none;
-}
-
-.faq .accordion-button:after {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
-.faq .accordion-body {
-  padding: 0 40px 30px 45px;
-  border: 0;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: none;
-}
-
-/*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
 .recent-posts {
@@ -2794,9 +2721,9 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-primary);
+  background-color: var(--alto);
   padding: 50px 0;
-  color: white;
+  color: var(--black);
 }
 
 .footer .footer-info .logo {
@@ -2813,8 +2740,8 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #fff;
-  font-family: var(--font-primary);
+  color: var(--heat-wave);
+  font-family: var(--font-family-inter);
 }
 
 .footer .footer-info p {
@@ -2831,13 +2758,13 @@ section {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--black);
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: #fff;
+  color: var(--heat-wave);
   border-color: #fff;
 }
 
@@ -2860,7 +2787,7 @@ section {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  color: rgba(0, 131, 116, 0.8);
+  color: var(--black);
   font-size: 12px;
   line-height: 0;
 }
@@ -2876,7 +2803,7 @@ section {
 }
 
 .footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--black);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
