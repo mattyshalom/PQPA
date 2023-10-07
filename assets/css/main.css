@@ -321,8 +321,19 @@ section {
   font-weight: 300 !important;
   letter-spacing: 0;
   line-height: normal !important;
+  margin-left: 5px;
 }
 
+@media (min-width: 320px) {
+  .hero .btn-get-started {
+    max-height: 60px;
+  }
+  
+  .hero a.btn-get-started {
+    font-size: var(--font-size-small) !important;
+    font-weight: 700 !important;
+  }
+}
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -772,7 +783,7 @@ section {
   font-weight: 600;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: 206px;
+  margin-top: 20px;
   min-height: 30px;
   white-space: nowrap;
 }
@@ -2743,6 +2754,12 @@ section {
 
 .card-body .needs-validation .btn:hover {
   background-color: var(--heat-wave) !important;
+}
+
+.card-body .needs-validation .btn {
+  background-color: var(--heat-wave);
+  color: var(--black);
+  border-color: var(--alto);
 }
 
 /*--------------------------------------------------------------
