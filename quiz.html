@@ -1,16 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Wuiz</title>
-
-    <!-- css file link -->
-    <link rel="stylesheet" href="assets/css/quiz.css">
-</head>
-<body>
-    <img src="assets/imG/PQPA LOGO.png" alt="img" id="img" class="img">
-    <h1 id="title">PQPA</h1>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <title>PAPQ - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    
+    <!-- Favicons -->
+    <link href="assets/img/PQPA favicon.png" rel="icon">
+    <link href="assets/img/PQPA-touch-icon.png" rel="pqpa-touch-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <!-- Template Main CSS File -->
+    <link href="assets/css/quiz.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+    </head>
+    <body>
+    <header id="header" class="header d-flex align-items-center">
+    
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/PQPA LOGO.png" alt="">
+            <!---<h1>Impact<span>.</span></h1>--->
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonies</a></li>
+            <li><a href="#call-to-action">Guide</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+                <svg class="flag" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <g clip-path="url(#clip0_1_380)">
+                    <path d="M0 3.52296V5.05557H2.18867L0 3.52296ZM1.81378 12.0556H5.05556V9.78562L1.81378 12.0556ZM8.94444 9.78601V12.0556H12.1858L8.94444 9.78601ZM0 8.94446V10.4771L2.18944 8.94446H0ZM12.1866 1.94446H8.94444V4.2144L12.1866 1.94446ZM14 10.4775V8.94446H11.8102L14 10.4775ZM14 5.05557V3.52296L11.8109 5.05557H14ZM5.05556 1.94446H1.81378L5.05556 4.2144V1.94446Z" fill="#00247D"/>
+                    <path d="M9.77666 8.94444L13.5535 11.5893C13.738 11.3993 13.8706 11.1651 13.9385 10.9091L11.1327 8.94444H9.77666ZM5.05555 8.94444H4.22294L0.446439 11.5889C0.64905 11.795 0.908828 11.9424 1.20011 12.0108L5.05555 9.31117V8.94444ZM8.94444 5.05556H9.77705L13.5535 2.41111C13.3475 2.202 13.0862 2.05568 12.8003 1.98917L8.94444 4.68883V5.05556ZM4.22294 5.05556L0.446439 2.41111C0.262088 2.60127 0.129423 2.83541 0.0610504 3.09128L2.86688 5.05556H4.22294Z" fill="#CF1B2B"/>
+                    <path d="M14 8.16668H8.16667V12.0556H8.94444V9.78601L12.1858 12.0556H12.4444C12.651 12.0556 12.8556 12.0144 13.046 11.9343C13.2365 11.8542 13.409 11.7369 13.5536 11.5893L9.77667 8.94446H11.1327L13.9386 10.9091C13.9747 10.7781 14 10.6423 14 10.5V10.4775L11.8102 8.94446H14V8.16668ZM0 8.16668V8.94446H2.18944L0 10.4771V10.5C0 10.9243 0.170722 11.3081 0.446444 11.5889L4.22294 8.94446H5.05556V9.31118L1.20011 12.0105C1.31444 12.0377 1.43267 12.0556 1.55556 12.0556H1.81378L5.05556 9.78562V12.0556H5.83333V8.16668H0ZM14 3.50001C14.0002 3.09245 13.8398 2.70122 13.5536 2.41112L9.77706 5.05557H8.94444V4.68885L12.8003 1.98918C12.6838 1.96061 12.5644 1.9456 12.4444 1.94446H12.1866L8.94444 4.2144V1.94446H8.16667V5.83335H14V5.05557H11.8109L14 3.52296V3.50001ZM5.05556 1.94446V4.2144L1.81378 1.94446H1.55556C1.34891 1.94437 1.14433 1.98561 0.953858 2.06575C0.763385 2.14589 0.590864 2.26332 0.446444 2.41112L4.22294 5.05557H2.86689L0.0610556 3.09129C0.0224701 3.22418 0.00193411 3.36165 0 3.50001L0 3.52296L2.18867 5.05557H0V5.83335H5.83333V1.94446H5.05556Z" fill="#EEEEEE"/>
+                    <path d="M8.16667 5.83335V1.94446H5.83333V5.83335H0V8.16668H5.83333V12.0556H8.16667V8.16668H14V5.83335H8.16667Z" fill="#CF1B2B"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_380">
+                    <rect width="14" height="14" fill="white"/>
+                    </clipPath>
+                </defs>
+                </svg>
+                <a href="#"><span>EN</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                </ul>
+            </li>
+            <li class="signup">
+                <a href="signup.html">Sign Up</a>
+            </li>
+            <li class="signin">
+                <a href="signin.html">Sign In</a>
+            </li>
+            </ul>
+        </nav><!-- .navbar -->
+    
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    
+        </div>
+    </header><!-- End Header -->
 
     <div id="timer">
         <h2>Time Remaining: </h2>
@@ -41,7 +121,7 @@
 
     <!-- scoreboard section -->
     <div id="scoreboard">
-        <img src="assets/images/Quiz__1 (1).png" alt="">
+        <img src="assets/img/PQPA-touch-icon.png" alt="">
         <h2 id="score-title">Your Score</h2>
         <h2 id="score"></h2>
         <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>

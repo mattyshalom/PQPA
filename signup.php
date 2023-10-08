@@ -1,6 +1,8 @@
+<?php
+require_once ('config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -32,6 +34,8 @@
 </head>
 
 <body>
+  <?php
+  ?>
 
   <main>
     <div class="container">
@@ -56,7 +60,7 @@
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form action="signup.php" method="post" class="row g-3 needs-validation" novalidate>
                     <div class="col-12">
                       <label for="yourName" class="form-label">Your Name</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
@@ -66,7 +70,7 @@
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Your Email</label>
                       <input type="email" name="email" class="form-control" id="yourEmail" required>
-                      <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                      <div class="invalid-feedback">Please enter a valid Email address!</div>
                     </div>
 
                     <div class="col-12">
@@ -92,7 +96,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                      <button id="reg" class="btn btn-primary w-100" type="submit" name="create">Create Account</button>
                     </div>
                     <div class="col-12">
                       <p class="small mb-0">Already have an account? <a href="signin.html">Sign In</a></p>
@@ -165,10 +169,50 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#reg').click(function(e){
+        var valid = this.form.checkValidity();
+        if(valid){
+          var name = $('#yourName').val();
+          var email = $('#yourEmail').val();
+          var username = $('#yourUsername').val();
+          var password = $('#yourPassword').val();
+          e.preventDefault();
+          $.ajax({
+            type: 'POST',
+            url: 'process.php',
+            data: {name: name, email: email, username: username, password: password},
+            success: function(data){
+              Swal.fire({
+                'title': 'Successful',
+                'text': data,
+                'type': 'success'
+              })
+            },
+            error: function(data){
+              Swal.fire({
+                'title': 'Errors',
+                'text': 'There were errors while saving the data.',
+                'type': 'error'
+              })
+            }
+          });
+        }else{
+          Swal.fire({
+            'title': 'Errors',
+            'text': 'Kindly fill all fields.',
+            'type': 'error'
+          })
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
